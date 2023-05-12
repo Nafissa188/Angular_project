@@ -1,0 +1,16 @@
+.title{
+    color: brown;
+    font-size:50px;
+}
+
+input.ng-untouched{
+    border: 2px solid burlywood;
+}
+
+input.ng-touched{
+    border: 2px solid red;
+}
+
+input.ng-valid{
+    border: 2px solid green;
+}

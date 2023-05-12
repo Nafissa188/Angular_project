@@ -1,0 +1,147 @@
+<div>Home page</div>
+
+<ul *ngFor="let item of dataArray">
+    <li>{{item.firstname}}</li>
+    <li>{{item.lastname}}</li>
+    <li>{{item.age}}</li>
+</ul>
+<!-- <ng-content select="h2"></ng-content> -->
+<!-- <br>
+
+<p>{{myI}}</p>
+<br>
+<br> -->
+<!-- <button (click)="print()">print</button> -->
+
+<!-- <p>{{num}}</p> -->
+
+<!-- <input type="text" #firstName>
+
+<app-profil></app-profil> -->
+
+
+
+<!-- <input type="text" name="speciality" #speciality>
+<input type="text" name="age" #age>
+<button (click)="print(age.value,speciality.value)">Print</button> -->
+
+
+<!-- <p>my name is {{myName}} and my number is {{num}}</p>
+<p>my firstname is {{profil.firstName}}, last name {{profil.lastName}} & my country {{profil.country}}</p> -->
+
+
+
+<!-- <ng-content select="h2"></ng-content>
+<ng-content select="h1"></ng-content>
+<ng-content select="p"></ng-content> -->
+
+
+<!-- <ng-content select="ng-container"></ng-content> -->
+
+
+
+
+<!-- <div>{{num}}</div> -->
+<!-- <form [formGroup]="myForm" (ngSubmit)="print()">
+    <input type="text" formControlName="fname" placeholder="fname" required>
+    <div class="alert alert-danger" role="alert" *ngIf="myForm.get('fname').touched && myForm.get('fname').hasError('required')">
+        This input fname is required
+    </div>
+    <div class="alert alert-danger" role="alert" *ngIf="myForm.get('fname').hasError('minlength')">
+        This input fname should be more than 5 caracter
+    </div>
+    <input type="text" formControlName="age" placeholder="age" required>
+    <div class="alert alert-danger" role="alert" *ngIf="age.touched && age.hasError('required')">
+        This input age is required
+    </div>
+    <input type="text" formControlName="email" placeholder="email" required>
+    <div class="alert alert-danger" role="alert" *ngIf="myForm.get('email').touched && myForm.get('email').hasError('required')">
+        This input email is required
+    </div>
+    <div class="alert alert-danger" role="alert" *ngIf="myForm.get('email').hasError('email')">
+        This is not an email
+    </div>
+    <div formArrayName="items">
+        <div *ngFor="let item of myForm.controls.items['controls']; index as i" [formGroupName]="i">
+            ID{{i}}:<input type="text" formControlName="id">
+            Title{{i}}:<input type="text" formControlName="title">
+            <button (click)="delete(i)">Delete this row {{i}}</button>
+        </div>
+        <button (click)="addnew()">Add new</button>
+    </div>
+    <button type="submit" [disabled]="myForm.invalid">Print</button>
+</form> -->
+
+<!-- <form #f="ngForm" (ngSubmit)="add(f)">
+    <input type="text" name="firstName" placeholder="First Name" #firstname="ngModel" ngModel required minlength="3" maxlength="7">
+    <div class="alert alert-danger" role="alert" *ngIf="firstname.errors?.['required'] && firstname.touched">
+        This FirstName input is required
+    </div>
+    <div class="alert alert-danger" role="alert" *ngIf="firstname.touched && firstname.errors?.['minlength']">
+        minlength error
+    </div>
+    <br>
+    <input type="text" name="lastName" placeholder="Last Name" #lastname="ngModel" ngModel required minlength="5">
+    <div class="alert alert-danger" role="alert" *ngIf="lastname.errors?.['required'] && lastname.touched">
+        This LastName input is required
+    </div>
+    <br>
+    <input type="text" name="age" placeholder="Age" ngModel required>
+    <br>
+    <button type="submit" [disabled]="f.invalid">Add</button>
+</form> -->
+
+
+<!-- <p [style.display]="titleStyle">home works!</p>
+<p>{{profile.firstname}}<br> {{profile.lastname}}</p>
+<p>Wbesite: {{profile.website}}</p>
+
+
+
+<button (click)="Show()">Show</button>
+<button (click)="Hidden()">Hiden</button>
+
+
+<br>
+<img [src]="linkImage" [style]="Sizing">
+
+<h1>{{number}}</h1>
+
+<input type="text" [(ngModel)]="number">
+<input type="text" [(ngModel)]="profile.firstname">
+<input type="text" [(ngModel)]="profile.lastname">
+
+
+<button (click)="inc()">Increment</button>
+<button (click)="dec()">Decrement</button> -->
+
+
+<!-- Directives (if statement, loop, swicth fi west el html)-->
+
+<!-- <p *ngIf="verif">Welcome</p>
+
+<div *ngFor="let item of dataArray;index as i">
+    <p>{{i+1}} {{item}}</p>
+</div>
+
+
+<input type="number" [(ngModel)]="num">
+
+<div [ngSwitch]="num">
+    <p *ngSwitchCase="1">First</p> 
+    <p *ngSwitchCase="2">Second</p> 
+    <p *ngSwitchCase="3">Third</p> 
+</div> -->
+
+<!-- <p [ngClass]="titleClass">Nafissa</p> -->
+
+<!-- <p [ngStyle]="{'color':style1, 'font-size':style2}">Welcome welcome</p>
+
+<p>{{profile.firstname | uppercase}}</p> -->
+
+
+<!-- <p>Home page</p>
+<input type="text" [(ngModel)]="profile.firstname">
+<button class="btn btn-primary" (click)="goToView()">View Profile</button>
+<button class="btn btn-success" (click)="goToDetails()">Details Profile</button>
+ -->
